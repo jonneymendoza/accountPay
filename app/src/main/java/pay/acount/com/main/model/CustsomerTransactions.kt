@@ -3,7 +3,7 @@ package pay.acount.com.main.model
 /**
  * Created by Jonathan on 10/04/2018.
  */
-data class CutsomerTransactions(
+data class CustsomerTransactions(
         var transactionId: String,
         var transactionType: String,
         var amount: String,
