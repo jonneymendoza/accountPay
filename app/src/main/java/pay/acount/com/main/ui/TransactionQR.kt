@@ -7,7 +7,7 @@ import com.google.gson.Gson
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.MultiFormatWriter
 import com.journeyapps.barcodescanner.BarcodeEncoder
-import pay.acount.com.main.model.CustsomerTransactions
+import pay.acount.com.main.model.CustomerTransactions
 
 /**
  * Created by Jonathan on 09/04/2018.
@@ -17,7 +17,7 @@ import pay.acount.com.main.model.CustsomerTransactions
  */
 class TransactionQR : ImageView {
 
-    private lateinit var customerTransaction: CustsomerTransactions
+    private lateinit var customerTransaction: CustomerTransactions
 
 
     constructor(context: Context, attrs: AttributeSet) : this(context, attrs, 0)
@@ -27,7 +27,7 @@ class TransactionQR : ImageView {
     }
 
 
-    fun generateTransactioQrCode(custsomerTransactions: CustsomerTransactions) {
+    fun generateTransactioQrCode(customerTransactions: CustomerTransactions) {
         this.customerTransaction = customerTransaction
         var qrText = Gson().toJson(customerTransaction)
 

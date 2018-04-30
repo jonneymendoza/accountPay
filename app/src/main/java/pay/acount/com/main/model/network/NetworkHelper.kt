@@ -3,8 +3,9 @@ package pay.acount.com.main.model.network
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import pay.acount.com.main.BuildConfig
+import javax.inject.Inject
 
-class NetworkHelper : NetworkHelperContract {
+class NetworkHelper @Inject constructor() : NetworkHelperContract {
     override fun createHttpClient(): OkHttpClient {
 
         val okHttpClient: OkHttpClient
