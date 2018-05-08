@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">aCountPayMerchant</string>
+    <string name="acccountPay">aCountPay</string>
+    <string name="payment">Payment</string>
+    <string name="refund">Refund</string>
+    <string name="proceed">Proceed</string>
+</resources>
