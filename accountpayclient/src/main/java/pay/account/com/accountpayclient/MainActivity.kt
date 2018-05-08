@@ -6,8 +6,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity
 import android.content.Intent
 import com.google.android.gms.common.api.CommonStatusCodes
-import com.google.android.gms.vision.barcode.Barcode
-
 
 
 class MainActivity : AppCompatActivity() {
@@ -32,20 +30,11 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == RC_BARCODE_CAPTURE) {
             if (resultCode == CommonStatusCodes.SUCCESS) {
                 if (data != null) {
-                    val barcode = data.getParcelableExtra<Barcode>(BarcodeCaptureActivity.BarcodeObject)
-//                    statusMessage.setText(R.string.barcode_success)
-//                    barcodeValue.setText(barcode.displayValue)
-//                    Log.d(FragmentActivity.TAG, "Barcode read: " + barcode.displayValue)
-                } else {
-//                    statusMessage.setText(R.string.barcode_failure)
-//                    Log.d(FragmentActivity.TAG, "No barcode captured, intent data is null")
+                    val intent = Intent(this, PayActivity::class.java)
+                    intent.putExtras(data)
+                    startActivity(intent)
                 }
-            } else {
-//                statusMessage.setText(String.format(getString(R.string.barcode_error),
-//                        CommonStatusCodes.getStatusCodeString(resultCode)))
             }
-        } else {
-            super.onActivityResult(requestCode, resultCode, data)
         }
     }
 }
