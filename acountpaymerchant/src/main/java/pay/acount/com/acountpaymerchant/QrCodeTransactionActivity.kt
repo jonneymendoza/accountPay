@@ -3,7 +3,6 @@ package pay.acount.com.acountpaymerchant
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.qrcode.QRCodeWriter
@@ -16,8 +15,8 @@ class QrCodeTransactionActivity : AppCompatActivity() {
         const val DATA_TRANSACTION = "TRASACION STRING"
     }
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.qr_code_transaction_layout)
         if (intent != null) {
             var transaction = intent.getStringExtra(DATA_TRANSACTION)

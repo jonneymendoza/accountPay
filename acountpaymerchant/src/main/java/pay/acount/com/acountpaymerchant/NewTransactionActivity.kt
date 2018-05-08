@@ -12,8 +12,8 @@ import pay.acount.com.main.model.CustomerTransactions
 import java.util.*
 
 class NewTransactionActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.new_transaction_layout)
         initialiseView()
     }
