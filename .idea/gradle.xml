@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/accountPaySdk" />
+            <option value="$PROJECT_DIR$/accountpayclient" />
             <option value="$PROJECT_DIR$/acountpaymerchant" />
           </set>
         </option>

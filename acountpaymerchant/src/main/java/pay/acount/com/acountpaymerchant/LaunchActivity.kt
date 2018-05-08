@@ -3,7 +3,6 @@ package pay.acount.com.acountpaymerchant
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_launch.*
 
 class LaunchActivity : AppCompatActivity() {

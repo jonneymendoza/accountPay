@@ -1,1 +1,1 @@
-include ':accountPaySdk', ':acountpaymerchant'
+include ':accountPaySdk', ':acountpaymerchant', ':accountpayclient'
