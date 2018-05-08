@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/personal projects.iml" filepath="$PROJECT_DIR$/personal projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/accountPay.iml" filepath="$PROJECT_DIR$/accountPay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/accountPaySdk/accountPaySdk.iml" filepath="$PROJECT_DIR$/accountPaySdk/accountPaySdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acountpaymerchant/acountpaymerchant.iml" filepath="$PROJECT_DIR$/acountpaymerchant/acountpaymerchant.iml" />
     </modules>
   </component>
 </project>
