@@ -3,6 +3,7 @@ package pay.acount.com.main.model.network
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import pay.acount.com.main.BuildConfig
+import pay.acount.com.main.model.network.contract.NetworkHelperContract
 import javax.inject.Inject
 
 class NetworkHelper @Inject constructor() : NetworkHelperContract {

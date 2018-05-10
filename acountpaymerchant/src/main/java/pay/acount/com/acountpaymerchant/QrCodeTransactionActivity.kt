@@ -21,7 +21,7 @@ class QrCodeTransactionActivity : AppCompatActivity() {
         if (intent != null) {
             var transaction = intent.getStringExtra(DATA_TRANSACTION)
             var qrcodeWriter = QRCodeWriter()
-            var bitmarix = qrcodeWriter.encode(transaction, BarcodeFormat.QR_CODE, 200, 200)
+            var bitmarix = qrcodeWriter.encode(transaction, BarcodeFormat.QR_CODE, 300, 300)
             var width = bitmarix.width
             var height = bitmarix.height
             var bmp = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565)

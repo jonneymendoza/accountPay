@@ -16,10 +16,10 @@ interface MerchantApi {
     fun sendMerchant(@Body merchant: Merchant): Single<Response<ResponseBody>>
 
     @DELETE("/merchants")
-    fun deleteMerchant(@Query(PARAM_ID) id: String)
+    fun deleteMerchant(@Query(PARAM_ID) id: String): Single<Response<ResponseBody>>
 
     @GET("/merchants")
-    fun getMerchant(@Query(PARAM_ID) id: String)
+    fun getMerchant(@Query(PARAM_ID) id: String): Single<Response<Merchant>>
 
 
 }

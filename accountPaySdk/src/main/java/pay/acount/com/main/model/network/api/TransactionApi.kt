@@ -17,9 +17,9 @@ interface TransactionApi {
     fun setTransaction(@Body transactions: CustomerTransactions): Single<Response<Void>>
 
     @DELETE("/transactions")
-    fun deleteTransaction(@Query(PARAM_ID) id: String)
+    fun deleteTransaction(@Query(PARAM_ID) id: String): Single<Response<Void>>
 
     @PUT("/transactions")
-    fun editTransaction(@Query(PARAM_ID) id: String, @Body transactions: CustomerTransactions)
+    fun editTransaction(@Query(PARAM_ID) id: String, @Body transactions: CustomerTransactions): Single<Response<Void>>
 
 }

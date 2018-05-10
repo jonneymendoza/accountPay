@@ -1,4 +1,4 @@
-package pay.acount.com.main.model.network
+package pay.acount.com.main.model.network.contract
 
 import okhttp3.OkHttpClient
 
