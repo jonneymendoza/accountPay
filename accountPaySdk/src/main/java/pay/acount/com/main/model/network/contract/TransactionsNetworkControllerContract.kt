@@ -11,7 +11,7 @@ interface TransactionsNetworkControllerContract {
 
     fun setTransaction(transactions: CustomerTransactions): Single<Response<Void>>
 
-    fun deleteTransaction(id: String)
+    fun deleteTransaction(id: String): Single<Response<Void>>
 
-    fun editTransaction(id: String, @Body transactions: CustomerTransactions)
+    fun editTransaction(id: String, @Body transactions: CustomerTransactions): Single<Response<Void>>
 }

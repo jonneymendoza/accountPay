@@ -40,11 +40,11 @@ class TransactionNetwork @Inject constructor() : TransactionsNetworkControllerCo
         return getMerchantApi().setTransaction(transactions)
     }
 
-    override fun deleteTransaction(id: String) {
+    override fun deleteTransaction(id: String): Single<Response<Void>> {
        return getMerchantApi().deleteTransaction(id)
     }
 
-    override fun editTransaction(id: String, transactions: CustomerTransactions) {
+    override fun editTransaction(id: String, transactions: CustomerTransactions): Single<Response<Void>> {
        return getMerchantApi().editTransaction(id, transactions)
     }
 
